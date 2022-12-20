@@ -37,6 +37,7 @@
             id="name"
             type="text"
             name="name"
+            required
           />
         </div>
 
@@ -46,6 +47,7 @@
             id="email"
             type="email"
             name="email"
+            required
           />
         </div>
 
@@ -57,13 +59,16 @@
             autofocus="on"
             required
             maxlength="200"
+            rows="8"
           ></textarea>
         </div>
 
-        <!-- Submit the form -->
-        <button type="submit">Submit</button>
-        <!-- Reset and start over -->
-        <button type="reset">Reset</button>
+        <div class="container">
+          <!-- Submit the form -->
+          <button type="submit">Submit</button>
+          <!-- Reset and start over -->
+          <button type="reset">Reset</button>
+        </div>
       </fieldset>
     </form>
   </body>

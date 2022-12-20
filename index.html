@@ -10,8 +10,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
     <title>HTML Forms - Alex Myers</title>
 
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -27,28 +29,40 @@
   </head>
   <body>
     <form action="">
+      <legend>Email Form</legend>
       <fieldset>
-        <label for="name">Name:</label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-        />
-        <label for="email">Email:</label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-        />
-        <label for="form-message">Your message:</label>
-        <textarea
-          id="form-message"
-          name="message"
-          autofocus="on"
-          required
-          maxlength="200"
-        ></textarea>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+          />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+          />
+        </div>
+
+        <div>
+          <label for="form-message">Your message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+          ></textarea>
+        </div>
+
+        <!-- Submit the form -->
         <button type="submit">Submit</button>
+        <!-- Reset and start over -->
         <button type="reset">Reset</button>
       </fieldset>
     </form>
